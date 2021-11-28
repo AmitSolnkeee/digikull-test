@@ -1,6 +1,13 @@
+///question 1
+(async () => {
+    const arr = ['foo', 'bar', 'a', 'b'];
+    for await (let a of arr) {
+      console.log(a);
+      await sleep(2000);
+    }
+  })();
+
 //question ----- 3
-
-
 for( let i = 0 ; i<20 ; i++){
    if(i%3 == 0){
        console.log(i)
